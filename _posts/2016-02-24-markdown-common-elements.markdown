@@ -41,6 +41,12 @@ And that's how to do it.
 This note **demonstrates** some of what [Markdown][some/link] is *capable of doing*.
 {% endhighlight %}
 
+Footnotes are also supported[^1]
+
+{% highlight html %}
+Footnotes are also supported[^1]
+{% endhighlight %}
+
 ---
 
 ## Headings
@@ -220,3 +226,5 @@ $(window).scroll(function() {
 [4]: http://daringfireball.net/projects/markdown/basics
 [5]: http://daringfireball.net/projects/markdown/syntax
 [6]: http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg
+
+[^1]: And here is the definition.
