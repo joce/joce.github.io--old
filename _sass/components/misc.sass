@@ -1,0 +1,151 @@
+
+$fontSans: "Helvetica Neue", Helvetica, Arial, sans-serif
+$fontMonospace: "Consolas", Liberation Mono, Menlo, Courier, monospace
+
+$alpha: #666
+$beta: #222
+$gama: #aaa
+$delta: #4b0082
+$epsilon: #ededed
+
+$mobile: "only screen and (max-width: 400px)"
+$tablet: "only screen and (min-width: 400px) and (max-width: 1050px)"
+$above: "only screen and (min-width: 780px)"
+$below: "only screen and (max-width: 780px)"
+
+
+
+
+
+pre
+  white-space: pre
+  word-wrap: normal
+  overflow: auto
+
+
+figcaption
+  position: relative
+  top: -20px
+  left: 0
+  right: 0
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  font-size: 0.7rem
+  /*color: $gama*/
+  color: #aaa
+  font-weight: 300
+
+
+  @media #{$mobile}
+    font-size: 0.6rem
+
+.caption
+  position: relative
+  top: 0.25rem
+  left: 0
+  right: 0
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  font-size: 0.7rem
+
+
+
+.bigger-image
+  min-width: 130%
+  margin: 5rem 0 5rem -15%
+
+  @media #{$mobile}
+    min-width: 114%
+    margin: 2rem 0 2rem -7%
+
+  @media #{$tablet}
+    min-width: 114%
+    margin: 2rem 0 2rem -7%
+
+.evidence
+  background-image: linear-gradient(to bottom, rgba(39,243,106,0.15), rgba(39,243,106,0.15))
+  color: #222
+
+.breaker
+  height: 1px
+  margin: 3rem auto
+  width: 100%
+
+  &:before
+    content: "• • •"
+    width: 100%
+    text-align: center
+    display: block
+    color: #aaa
+    letter-spacing: 4px
+    position: relative
+    top: -8px
+
+
+
+.side-by-side
+  @media #{$above}
+    width: 130%
+    margin: 6rem 0 6rem -15%
+
+  @media #{$below}
+    width: 100%
+    margin: 4rem 0
+
+  > .toleft,
+  > .toright
+    display: inline-block
+    width: 47.5%
+
+    @media #{$below}
+      img
+        text-align: center
+        display: block
+        margin: 0 auto
+
+  > .toleft
+    @media #{$above}
+      margin-right: 2%
+
+    @media #{$below}
+      width: 100%
+      margin: 0 0 4rem 0
+
+  > .toright
+    @media #{$above}
+      margin-left: 2%
+      vertical-align: top
+
+    @media #{$below}
+      width: 100%
+      margin: 0 0 4rem 0
+
+  > .toleft > p,
+  > .toright > p
+    margin: 0 0 4rem 0
+
+    @media #{$below}
+      margin: 0
+
+
+.spoiler
+  position: relative
+
+  &:before
+    content: ''
+    background-color: #fafae0
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 50
+
+  &:hover:before
+    display: none
+
+
+.emoji
+  display: inline
