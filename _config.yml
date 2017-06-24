@@ -15,18 +15,22 @@ author:
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
 
+# Comments
+disqus:
+  shortname:         mydisqus # enter this from your disqus account
+
 # Custom vars
 version:             1.0.0
 
 # Compress HTML (using the magical compress.html file!)
 compress_html:
-  clippings: all
-  comments: all
-  blanklines: false
+  clippings:         all
+  comments:          all
+  blanklines:        false
 
 # Compress SASS
 sass:
-  style: compressed
+  style:             compressed
 
 gems:
   - jekyll-feed
