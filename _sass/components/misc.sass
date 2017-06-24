@@ -1,227 +1,63 @@
-
-$fontSans: Helvetica, Arial, sans-serif
-$fontMonospace: "Consolas", Liberation Mono, Menlo, Courier, monospace
-
-$alpha: #666
-$beta: #222
-$gama: #aaa
-$delta: #4b0082
-$epsilon: #ededed
+/* Taken from the Indigo Jekyll template   */
+/* https://github.com/sergiokopplin/indigo */
 
 $mobile: "only screen and (max-width: 400px)"
 $tablet: "only screen and (min-width: 400px) and (max-width: 1050px)"
 $above: "only screen and (min-width: 780px)"
 $below: "only screen and (max-width: 780px)"
 
-
-
-html
-  font-family: Helvetica, Arial, sans-serif
-  font-size: 16px
-
-pre
-  white-space: pre
-  word-wrap: normal
-  overflow: auto
-
-h1
-  font-size: 1.5rem
-
-h2
-  margin-top: 1rem
-  font-size: 1.25rem
-
-h3
-  margin-top: 1.25rem
-  font-size: 1.125rem
-
-h4, h5, h6
-  margin-top: 1rem
-  font-size: 1rem
-
-.related-posts
-  li
-    a:hover
-      text-decoration: underline
-
-.gist-data
-  table
-    border: none
-    td, th
-      border: none
-
 figcaption
-  position: relative
-  top: -20px
-  left: 0
-  right: 0
-  margin: 0 auto
-  width: 100%
-  text-align: center
-  font-size: 0.7rem
-  /*color: $gama*/
-  color: #aaa
-  font-weight: 300
-
-
-  @media #{$mobile}
-    font-size: 0.6rem
-
-.caption
-  position: relative
-  top: 0.25rem
-  left: 0
-  right: 0
-  margin: 0 auto
-  width: 100%
-  text-align: center
-  font-size: 0.7rem
-
-
-
-.bigger-image
-  min-width: 130%
-  margin: 5rem 0 5rem -15%
-
-  @media #{$mobile}
-    min-width: 114%
-    margin: 2rem 0 2rem -7%
-
-  @media #{$tablet}
-    min-width: 114%
-    margin: 2rem 0 2rem -7%
-
-.evidence
-  background-image: linear-gradient(to bottom, rgba(39,243,106,0.15), rgba(39,243,106,0.15))
-  color: #222
-
-.breaker
-  height: 1px
-  margin: 3rem auto
-  width: 100%
-
-  &:before
-    content: "• • •"
-    width: 100%
-    text-align: center
-    display: block
-    color: #aaa
-    letter-spacing: 4px
     position: relative
-    top: -8px
-
-
-
-.side-by-side
-  @media #{$above}
-    width: 130%
-    margin: 6rem 0 6rem -15%
-
-  @media #{$below}
-    width: 100%
-    margin: 4rem 0
-
-  > .toleft,
-  > .toright
-    display: inline-block
-    width: 47.5%
-
-    @media #{$below}
-      img
-        text-align: center
-        display: block
-        margin: 0 auto
-
-  > .toleft
-    @media #{$above}
-      margin-right: 2%
-
-    @media #{$below}
-      width: 100%
-      margin: 0 0 4rem 0
-
-  > .toright
-    @media #{$above}
-      margin-left: 2%
-      vertical-align: top
-
-    @media #{$below}
-      width: 100%
-      margin: 0 0 4rem 0
-
-  > .toleft > p,
-  > .toright > p
-    margin: 0 0 4rem 0
-
-    @media #{$below}
-      margin: 0
-
-
-.spoiler
-  position: relative
-
-  &:before
-    content: ''
-    background-color: #fafae0
-    position: absolute
-    top: 0
-    bottom: 0
+    top: -20px
     left: 0
     right: 0
-    z-index: 50
+    margin: 0 auto
+    width: 100%
+    text-align: center
+    font-size: 0.7rem
+    color: #aaa
+    font-weight: 300
 
-  &:hover:before
-    display: none
+    @media #{$mobile}
+        font-size: 0.6rem
 
+.caption
+    position: relative
+    top: 0.25rem
+    left: 0
+    right: 0
+    margin: 0 auto
+    width: 100%
+    text-align: center
+    font-size: 0.7rem
 
-.emoji
-  display: inline
+.bigger-image
+    min-width: 130%
+    margin: 5rem 0 5rem -15%
 
+    @media #{$mobile}
+        min-width: 114%
+        margin: 2rem 0 2rem -7%
 
+    @media #{$tablet}
+        min-width: 114%
+        margin: 2rem 0 2rem -7%
 
-/*****************************************************************************/
-/*
-/* Tags
-/*
-/*****************************************************************************/
+.evidence
+    background-image: linear-gradient(to bottom, rgba(39,243,106,0.15), rgba(39,243,106,0.15))
+    color: #222
 
-.tag-box
-  list-style: none
-  margin: 0
-  padding: 4px 0
-  overflow: hidden
-  *zoom: 1
+.breaker
+    height: 1px
+    margin: 3rem auto
+    width: 100%
 
-.tag-box:before, .tag-box:after
-  display: tabl
-  content: ""
-  line-height: 0
-
-.tag-box:after
-  clear: both
-
-
-.tag-box.inline li
-  float: left
-  /* font-size: 14px; */
-  font-size: 0.875rem
-  line-height: 2.5
-
-
-.tag-box a
-  padding: 4px 6px
-  margin: 2px
-  background-color: #e6e6e6
-  -webkit-border-radius: 4px
-  -moz-border-radius: 4px
-  border-radius: 4px
-  text-decoration: none
-
-
-
-.tag-box a span
-  vertical-align: super
-  /* font-size: 10px; */
-  font-size: 0.625rem
-
-
+    &:before
+        content: "• • •"
+        width: 100%
+        text-align: center
+        display: block
+        color: #aaa
+        letter-spacing: 4px
+        position: relative
+        top: -8px
