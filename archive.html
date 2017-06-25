@@ -1,0 +1,75 @@
+---
+layout: page
+title: Archive
+description: "An archive of posts sorted by date."
+---
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+      <h2>{{this_year}}</h2>
+        <ul>
+      {% endif %}
+
+          <li itemscope>
+            <span class="entry-date">
+              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign d = post.date | date: "%-d"  %}
+                {{ post.date | date: "%b." }}
+                {% case d %}
+                  {% when '1' or '21' or '31' %}{{ d }}st
+                  {% when '2' or '22' %}{{ d }}nd
+                  {% when '3' or '23' %}{{ d }}rd
+                  {% else %}{{ d }}th
+                  {% endcase %}
+              </time>
+            </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+
+    {% if forloop.last %}
+        </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2>{{next_year}}</h2>
+          <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<!-- This version has collapsible sections, but you can only expand a single section at a time, so it's not so cool.
+     Ideally, we'd have <details> tags, but the support is still not very broad. -->
+<!--
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <div>
+      <a id="hide-{{ this_year }}-ref" href="#hide-{{ this_year }}-ref" class="hide"><h2>⯈ {{this_year}}</h2></a>
+      <a id="show-{{ this_year }}-ref" href="#show-{{ this_year }}-ref" class="show"><h2>⯆ {{this_year}}</h2></a>
+      <div class="details">
+        <ul>
+      {% endif %}
+
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+    {% if forloop.last %}
+        </ul>
+      </div>
+    </div>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+      </div>
+    </div>
+      <div>
+        <a id="hide-{{ next_year }}-ref" href="#hide-{{ next_year }}-ref" class="hide"><h2>⯈ {{next_year}}</h2></a>
+        <a id="show-{{ next_year }}-ref" href="#show-{{ next_year }}-ref" class="show"><h2>⯆ {{next_year}}</h2></a>
+        <div class="details">
+          <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+-->

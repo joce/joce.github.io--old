@@ -58,3 +58,18 @@ h4, h5, h6 {
 .emoji {
   display: inline;
 }
+
+/* This is for the collapsible sections, but it only allows to expand a single section at a time, so it's not so cool.
+   Ideally, we'd have <details> tags, but the support is still not very broad. */
+
+/*
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
+}
+*/
