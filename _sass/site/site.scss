@@ -41,6 +41,7 @@ h4, h5, h6 {
   }
 }
 
+/* Gist via GitHub Pages */
 .gist-data {
   table {
     border: none
@@ -50,13 +51,20 @@ h4, h5, h6 {
   }
 }
 
-/* Gist via GitHub Pages */
 .gist .gist-file {
   font-family: "Consolas", Menlo, Monaco, "Courier New", monospace !important;
 }
 
 .emoji {
   display: inline;
+}
+
+.sidebar {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.pagination {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* This is for the collapsible sections, but it only allows to expand a single section at a time, so it's not so cool.
