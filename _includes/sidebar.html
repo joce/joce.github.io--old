@@ -47,7 +47,7 @@
       <a href="{{ site.url }}/feed.xml" target="_blank"><svg class="icon icon-rss"><use xlink:href="#icon-rss" /></svg></a>
     </p>
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      &copy; {{ site.time | date: '%Y' }} {% if site.author.email %}<a href="mailto:{{ site.author.email }}" target="_blank">{% endif %}{{ site.author.name }}{% if site.author.email %}</a>{% endif %}.<br/>All rights reserved.
     </p>
   </div>
 
