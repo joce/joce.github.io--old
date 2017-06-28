@@ -19,14 +19,28 @@ author:
 disqus:
   shortname:         mydisqus # enter this from your disqus account
 
-# Custom vars
-version:             1.0.0
-
 # Compress HTML (using the magical compress.html file!)
 compress_html:
   clippings:         all
   comments:          all
   blanklines:        false
+
+social:
+  facebook:          myfacebook
+  twitter:           mytwitter
+  # google:            mygoogle
+  # instagram:         myinstagram
+  # pinterest:         mypinterest
+  # linkedin:          mylinkedin
+  # youtube:           myyoutube
+  # spotify:           myspotify
+  github:            mygithub
+  # lastfm:            mylastfm
+  # stackoverflow:     9999999/username
+  # quora:             userquora
+  # reddit:            username
+  # medium:            medium
+  # vimeo:             myvimeo
 
 # Compress SASS
 sass:
