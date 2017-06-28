@@ -7,7 +7,10 @@ layout: default
     {% if page.tags.first != null %}
     <p class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</p>
     {% endif %}
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+      <span class="post-date">
+        {% capture the_date %}{{ page.date }}{% endcapture %}
+        {% include date.html %}
+      </span>
   {{ content }}
 </div>
 
@@ -18,7 +21,10 @@ layout: default
       <li>
         <h3>
           <a href="{{ post.url }}">{{ post.title }}</a>
-          <small> {{ post.date | date_to_string }}</small>
+          <small>
+            {% capture the_date %}{{ post.date }}{% endcapture %}
+            {% include date.html %}
+          </small>
         </h3>
       </li>
     {% endfor %}
