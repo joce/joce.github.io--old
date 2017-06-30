@@ -6,6 +6,7 @@ title:               Jocelyn Legault
 tagline:             'The public parts'
 description:         'A repository of thoughts and experiments.'
 url:                 https://jocelyn.legau.lt
+lang:                en_CA
 twitter:
   username:          jocelynlegault
 paginate:            5
@@ -17,6 +18,7 @@ author:
   name:              Jocelyn Legault
   url:               https://jocelyn.legau.lt
   email:             jocelynlegault@gmail.com
+  picture:           /assets/img/joce-face.jpg
 
 # Comments
 disqus:
