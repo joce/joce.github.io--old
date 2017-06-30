@@ -2,22 +2,25 @@
 permalink:           pretty
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               Jocelyn Legault
+tagline:             'The public parts'
+description:         'A repository of thoughts and experiments.'
+url:                 https://jocelyn.legau.lt
+twitter:
+  username:          jocelynlegault
 paginate:            5
 excerpt_separator:   <!--more-->
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  twitter:           jocelynlegault
+  name:              Jocelyn Legault
+  url:               https://jocelyn.legau.lt
+  email:             jocelynlegault@gmail.com
 
 # Comments
 disqus:
-  shortname:         mydisqus # enter this from your disqus account
+  shortname:         jocelynlegault # enter this from your disqus account
 
 # Compress HTML (using the magical compress.html file!)
 compress_html:
@@ -26,21 +29,29 @@ compress_html:
   blanklines:        false
 
 social:
-  facebook:          myfacebook
-  twitter:           mytwitter
+  name:              Jocelyn Legault
+  links:
+    - https://twitter.com/jocelynlegault
+    - https://github.com/joce
+    - https://stackoverflow.com/users/82682/joce
+    - https://www.linkedin.com/in/jocelyn-legault-b22642/
+  # facebook:          myfacebook
+  # twitter:           mytwitter
   # google:            mygoogle
   # instagram:         myinstagram
   # pinterest:         mypinterest
   # linkedin:          mylinkedin
   # youtube:           myyoutube
   # spotify:           myspotify
-  github:            mygithub
+  github:            joce
   # lastfm:            mylastfm
-  # stackoverflow:     9999999/username
+  stackoverflow:     82682/joce
   # quora:             userquora
   # reddit:            username
   # medium:            medium
   # vimeo:             myvimeo
+
+google_site_verification: ahELMuJq93oFwiOBhJIzC6WQjH-Wg9thjceCcZVuOWo
 
 # Compress SASS
 sass:
@@ -53,4 +64,3 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
-
