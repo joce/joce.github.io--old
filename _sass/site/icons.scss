@@ -1,21 +1,12 @@
-.icon {
-  width: 32px !important;
-  height: 32px !important;
-  fill: rgba(255, 255, 255, 0.6) !important;
-  position: relative;
-  /*top: 15px; */
-  display: inherit;
-  margin: 0;
-  text-decoration: none;
-  transition: ease-in-out all .3s;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    fill: rgba(255, 255, 255, 1) !important;
-  }
-}
-
 .sidebar .social-icons {
-  margin-right: 1rem;
+  font-size: 20px;
+  margin-top: -16px;
+  margin-left: -6px;
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
 }

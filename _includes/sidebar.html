@@ -31,22 +31,15 @@
 
   <div class="sidebar-item">
     <p class="social-icons">
-      <!-- Add and/or remove sites to your heart's content -->
-      {% if site.social.facebook %}
-      <a data-title="facebook.com/{{ site.social.facebook }}" href="https://facebook.com/{{ site.social.facebook }}" target="_blank"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook" /></svg></a>
-      {% endif %}
-      {% if site.social.twitter %}
-      <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter" /></svg></a>
-      {% endif %}
-      {% if site.social.stackoverflow %}
-      <a href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><svg class="icon icon-stackoverflow"><use xlink:href="#icon-stackoverflow" /></svg></a>
-      {% endif %}
-      {% if site.social.github %}
-      <a href="https://github.com/{{ site.social.github }}" target="_blank"><svg class="icon icon-github"><use xlink:href="#icon-github" /></svg></a>
-      {% endif %}
-      <a href="{{ site.url }}/feed.xml" target="_blank"><svg class="icon icon-rss"><use xlink:href="#icon-rss" /></svg></a>
+      <!-- Add and/or remove sites to your heart's content
+      -->{% if site.social.facebook %}<a data-title="facebook.com/{{ site.social.facebook }}" href="https://facebook.com/{{ site.social.facebook }}" target="_blank"><i class="icon-facebook"></i></a>{% endif %}<!--
+      -->{% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}" target="_blank"><i class="icon-twitter"></i></a>{% endif %}<!--
+      -->{% if site.social.stackoverflow %}<a href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i class="icon-stackoverflow"></i> </a>{% endif %}<!--
+      -->{% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" target="_blank"><i class="icon-github-circled"></i></a>{% endif %}<!--
+      --><a href="{{ site.url }}/feed.xml" target="_blank"><i class="icon-rss"></i></a><!--
+      -->
     </p>
-    <p>
+    <p class="copyright">
       &copy; {{ site.time | date: '%Y' }} {% if site.author.email %}<a href="mailto:{{ site.author.email }}" target="_blank">{% endif %}{{ site.author.name }}{% if site.author.email %}</a>{% endif %}.<br/>All rights reserved.
     </p>
   </div>
